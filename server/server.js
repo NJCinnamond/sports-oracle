@@ -11,7 +11,8 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-app.use(require('./routes/record'));
+app.use(require('./routes/epl-fixtures'));
+app.use(require('./routes/epl-teams'));
 
 // Global error handling
 app.use(function (err, _req, res) {

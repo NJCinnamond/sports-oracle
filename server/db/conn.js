@@ -14,7 +14,7 @@ module.exports = {
                 return callback(err);
             }
 
-            dbConnection = db.db('crypto-bets-dev');
+            dbConnection = db.db('sports');
             console.log('Successfully connected to MongoDB.');
 
             return callback();
