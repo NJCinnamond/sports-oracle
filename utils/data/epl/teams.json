@@ -1,0 +1,122 @@
+[
+    {
+        "team_id": 0,
+        "short_name": "ARS",
+        "long_name": "Arsenal",
+        "crest_url": ""
+    },
+    {
+        "team_id": 1,
+        "short_name": "AVL",
+        "long_name": "Aston Villa",
+        "crest_url": ""
+    },
+    {
+        "team_id": 2,
+        "short_name": "BOU",
+        "long_name": "Bournemouth",
+        "crest_url": ""
+    },
+    {
+        "team_id": 3,
+        "short_name": "BRE",
+        "long_name": "Brentford",
+        "crest_url": ""
+    },
+    {
+        "team_id": 4,
+        "short_name": "BHA",
+        "long_name": "Brighton and Hove Albion",
+        "crest_url": ""
+    },
+    {
+        "team_id": 5,
+        "short_name": "CHE",
+        "long_name": "Chelsea",
+        "crest_url": ""
+    },
+    {
+        "team_id": 6,
+        "short_name": "CRY",
+        "long_name": "Crystal Palace",
+        "crest_url": ""
+    },
+    {
+        "team_id": 7,
+        "short_name": "EVE",
+        "long_name": "Everton",
+        "crest_url": ""
+    },
+    {
+        "team_id": 8,
+        "short_name": "FUL",
+        "long_name": "Fulham",
+        "crest_url": ""
+    },
+    {
+        "team_id": 9,
+        "short_name": "LEE",
+        "long_name": "Leeds United",
+        "crest_url": ""
+    },
+    {
+        "team_id": 10,
+        "short_name": "LEI",
+        "long_name": "Leicester City",
+        "crest_url": ""
+    },
+    {
+        "team_id": 11,
+        "short_name": "LIV",
+        "long_name": "Liverpool",
+        "crest_url": ""
+    },
+    {
+        "team_id": 12,
+        "short_name": "MCI",
+        "long_name": "Manchester City",
+        "crest_url": ""
+    },
+    {
+        "team_id": 13,
+        "short_name": "MUN",
+        "long_name": "Manchester United",
+        "crest_url": ""
+    },
+    {
+        "team_id": 14,
+        "short_name": "NEW",
+        "long_name": "Newcastle United",
+        "crest_url": ""
+    },
+    {
+        "team_id": 15,
+        "short_name": "SOU",
+        "long_name": "Southampton",
+        "crest_url": ""
+    },
+    {
+        "team_id": 16,
+        "short_name": "TOT",
+        "long_name": "Tottenham Hotspur",
+        "crest_url": ""
+    },
+    {
+        "team_id": 17,
+        "short_name": "WHU",
+        "long_name": "West Ham United",
+        "crest_url": ""
+    },
+    {
+        "team_id": 18,
+        "short_name": "WOL",
+        "long_name": "Wolverhampton Wanderers",
+        "crest_url": ""
+    },
+    {
+        "team_id": 19,
+        "short_name": "NOT",
+        "long_name": "Nottingham Forest",
+        "crest_url": ""
+    }
+]
