@@ -28,7 +28,7 @@ teamsRoutes.route('/premier-league/teams').get(async function (_req, res) {
 // Endpoint for getting Premier League teams record by id
 teamsRoutes.route('/premier-league/teams/:id').get((req, res) => {
     const dbConnect = dbo.getDb();
-    const query = { id: parseInt(req.params.id) };
+    const query = { team_id: parseInt(req.params.id) };
 
     dbConnect
         .collection('epl-teams')
@@ -47,9 +47,9 @@ teamsRoutes.route('/premier-league/teams/:id').get((req, res) => {
 // Endpoint for creating premier league teams records
 teamsRoutes.route('/premier-league/teams').post(function (req, res) {
     const dbConnect = dbo.getDb();
-
+    console.log(req.body);
     const matchDocument = {
-        id: req.body.id,
+        team_id: req.body.team_id,
         last_modified: new Date(),
         short_name: req.body.short_name,
         long_name: req.body.long_name,
@@ -71,7 +71,7 @@ teamsRoutes.route('/premier-league/teams').post(function (req, res) {
 // Endpoint for deleting premier league teams record
 teamsRoutes.route('/premier-league/teams/:id').delete((req, res) => {
     const dbConnect = dbo.getDb();
-    const query = { id: parseInt(req.params.id) };
+    const query = { team_id: parseInt(req.params.id) };
 
     dbConnect
         .collection('epl-teams')

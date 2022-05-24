@@ -28,7 +28,7 @@ fixturesRoutes.route('/premier-league/fixtures').get(async function (_req, res) 
 // Endpoint for getting Premier League fixture record by id
 fixturesRoutes.route('/premier-league/fixtures/:id').get((req, res) => {
     const dbConnect = dbo.getDb();
-    const query = { id: parseInt(req.params.id) };
+    const query = { fixture_id: parseInt(req.params.id) };
 
     dbConnect
         .collection('epl-fixtures')
@@ -49,7 +49,7 @@ fixturesRoutes.route('/premier-league/fixtures').post(function (req, res) {
     const dbConnect = dbo.getDb();
 
     const matchDocument = {
-        id: req.body.id,
+        fixture_id: req.body.fixture_id,
         last_modified: new Date(),
         home: req.body.home_team,
         away: req.body.away_team,
@@ -72,7 +72,7 @@ fixturesRoutes.route('/premier-league/fixtures').post(function (req, res) {
 // Endpoint for deleting premier league fixture record
 fixturesRoutes.route('/premier-league/fixtures/:id').delete((req, res) => {
     const dbConnect = dbo.getDb();
-    const query = { id: parseInt(req.params.id) };
+    const query = { fixture_id: parseInt(req.params.id) };
 
     dbConnect
         .collection('epl-fixtures')
