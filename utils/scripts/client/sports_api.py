@@ -19,7 +19,9 @@ class SportsAPI:
         data = json.load(f)
         return data
 
-    def get_epl_fixtures_data(self, start_date: datetime, end_date: datetime):
+    def get_epl_fixtures_data(
+        self, start_date: datetime = None, end_date: datetime = None
+    ):
         fixture_data_path = os.path.join(dirname, fixture_data_fname)
         f = open(fixture_data_path)
         data = json.load(f)

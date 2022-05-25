@@ -68,6 +68,41 @@ teamsRoutes.route('/premier-league/teams').post(function (req, res) {
         });
 });
 
+// Endpoint for updating premier league teams records
+teamsRoutes.route('/premier-league/teams/:id').patch(function (req, res) {
+    const dbConnect = dbo.getDb();
+    const query = { team_id: parseInt(req.params.id) };
+
+    const newFields = {};
+    if (req.body.short_name) {
+        newFields['short_name'] = req.body.short_name;
+    };
+    if (req.body.long_name) {
+        newFields['long_name'] = req.body.long_name;
+    };
+    if (req.body.crest_url) {
+        newFields['crest_url'] = req.body.crest_url;
+    };
+    newFields['last_modified'] = new Date();
+
+    const updates = {
+        $set: newFields,
+    };
+
+    dbConnect
+        .collection('epl-teams')
+        .updateOne(query, updates, function (err, _result) {
+            if (err) {
+                res
+                    .status(400)
+                    .send(`Error updating team document with id ${query.team_id}`);
+            } else {
+                console.log(`Updated team document with id ${query.team_id}`);
+                res.status(200).send();
+            }
+        });
+});
+
 // Endpoint for deleting premier league teams record
 teamsRoutes.route('/premier-league/teams/:id').delete((req, res) => {
     const dbConnect = dbo.getDb();

@@ -1,0 +1,62 @@
+[
+    {
+        "home_team_id": 0,
+        "away_team_id": 1,
+        "ko_time": "2021-08-12T15:00:00.000Z",
+        "season": "2021/22"
+    },
+    {
+        "home_team_id": 2,
+        "away_team_id": 3,
+        "ko_time": "2021-08-12T15:00:00.000Z",
+        "season": "2021/22"
+    },
+    {
+        "home_team_id": 4,
+        "away_team_id": 5,
+        "ko_time": "2021-08-12T15:00:00.000Z",
+        "season": "2021/22"
+    },
+    {
+        "home_team_id": 6,
+        "away_team_id": 7,
+        "ko_time": "2021-08-12T15:00:00.000Z",
+        "season": "2021/22"
+    },
+    {
+        "home_team_id": 8,
+        "away_team_id": 9,
+        "ko_time": "2021-08-12T15:00:00.000Z",
+        "season": "2021/22"
+    },
+    {
+        "home_team_id": 10,
+        "away_team_id": 11,
+        "ko_time": "2021-08-12T15:00:00.000Z",
+        "season": "2021/22"
+    },
+    {
+        "home_team_id": 12,
+        "away_team_id": 13,
+        "ko_time": "2021-08-12T15:00:00.000Z",
+        "season": "2021/22"
+    },
+    {
+        "home_team_id": 14,
+        "away_team_id": 15,
+        "ko_time": "2021-08-12T15:00:00.000Z",
+        "season": "2021/22"
+    },
+    {
+        "home_team_id": 16,
+        "away_team_id": 17,
+        "ko_time": "2021-08-12T15:00:00.000Z",
+        "season": "2021/22"
+    },
+    {
+        "home_team_id": 18,
+        "away_team_id": 19,
+        "ko_time": "2021-08-12T15:00:00.000Z",
+        "season": "2021/22"
+    }
+]

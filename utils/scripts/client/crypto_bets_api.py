@@ -18,16 +18,17 @@ class CryptoBetsAPIClient:
     def getTeam(self, team_id: int):
         return requests.get(self.hostname + "/teams/" + str(team_id))
 
+    # TODO: Change ko_time to parse kickoff day, month, yr, hour, min, sec to datetime
     def createFixture(
-        self, fixture_id: int, home_team: str, away_team: str, kickoff_time: datetime
+        self, home_team_id: int, away_team_id: int, season: str, ko_time: str
     ):
         data = {
-            "fixture_id": fixture_id,
-            "home_team": home_team,
-            "away_team": away_team,
-            "kickoff_time": kickoff_time,
+            "home_team_id": home_team_id,
+            "away_team_id": away_team_id,
+            "season": season,
+            "ko_time": ko_time,
         }
-        return requests.post(self.hostname + "/fixtures", data=data)
+        return requests.post(self.hostname + "/fixtures", json=data)
 
     def getFixture(self, fixture_id: int):
         return requests.get(self.hostname + "/fixtures/" + str(fixture_id))
